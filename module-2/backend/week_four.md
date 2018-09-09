@@ -57,10 +57,10 @@ end
 ```
 14. How would you clean incoming data to ensure "$300" or "300.00" is stored as 300?
 
-"$300".gsub(/\D\./,'').to_i
+`"$300".gsub(/\D\./,'').to_i`
 => 300
 
-"300.00".gsub(/\D\./,'').to_i
+`"300.00".gsub(/\D\./,'').to_i`
 => 300
 
 
